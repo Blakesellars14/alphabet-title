@@ -1,0 +1,20 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+    <!-- Title Page (home-page.xml) 
+    Built by Blake Sellars July, 2019
+    -->
+
+
+    <ActionBar title="Tŝilhqot’in Alphabet" class="action-bar">
+    </ActionBar>
+
+<!-- GridLayout with image 4 times as big as the other elements (Title, play button, credits button, title page credit label) -->
+    <GridLayout rows="*,4*,*,*,*" id="main-layout" class="home-panel">
+        <Label row="0" id="myLabel" textWrap="true" text="Tŝilhqot'in Alphabet"
+            class="h2" />
+        <Image row="1" src="~/TNG-logo-Pantone485+black.png" stertch="aspectFill" />
+        <Button row="2" text="play" />
+        <Button row="3" text="credits" tap="showCredits" />
+        <Label row="4" id="blakeCredit" textWrap="true" text="Title Page by Blake Sellars" />
+    </GridLayout>
+
+</Page>
